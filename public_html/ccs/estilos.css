@@ -1,0 +1,166 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 24-oct-2023, 18:21:46
+    Author     : jujis
+*/
+
+header {
+    background-color: #333; /* Cambia el color de fondo a tu preferencia */
+    color: #fff; /* Cambia el color de texto a tu preferencia */
+    padding: 10px; /* Añade espacio alrededor del contenido dentro del encabezado */
+    text-align: center; /* Centra el texto dentro del encabezado */
+
+    
+} 
+
+nav {
+    
+}
+
+nav ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding: 0; /* Elimina el espacio interior de la lista */
+}
+
+nav li {
+    display: inline; /* Muestra los elementos de la lista en línea horizontal */
+    margin-right: 20px; /* Añade espacio entre elementos del menú */
+}
+
+form {
+    
+}
+
+section {
+    background-color: #fff; /* Cambia el color de fondo a tu preferencia */
+    color: #333; /* Cambia el color de texto a tu preferencia */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+
+table {
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    width: 100%; /* Establece el ancho de la tabla al 100% del contenedor */
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Agrega un borde a la tabla, las filas de encabezados y las celdas */
+    padding: 8px; /* Añade espacio interior a las celdas */
+}
+
+/* Estilos para las filas de datos pares */
+.filas-pares {
+    background-color: #cccccc;
+}
+
+/* Estilos para las filas de datos impares */
+.filas-impares {
+    background-color: #999999;
+}
+
+
+
+
+footer {
+    background-color: #333333;
+    width: 100%;
+    text-align: center;
+    padding: 10px; /* Añade espacio alrededor del pie de página */
+    
+}
+
+footer p {
+    color: #00cccc;
+    font-size: 2em;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.category-description {
+    display: none;
+}
+
+li.roman-numeral {
+    list-style: none;
+    counter-increment: category-counter;
+    position: relative;
+}
+
+li.roman-numeral:before {
+    content: counter(category-counter, upper-roman) ". ";
+    position: absolute;
+    left: -2.5em;
+}
+
+li:hover .category-description {
+    display: block;
+}
+
+
+
+label {
+    
+    font-family: Arial, sans-serif; /* Cambia la fuente de las etiquetas */
+    color: #333; /* Cambia el color del texto de las etiquetas */ 
+}
+.formulario{
+    
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.ContendorBase{
+    margin: 1em;
+    width: 60%;
+    margin-left: 20%;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+label{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.requerido{
+    border: solid 3px red;
+}
+
+.opcional{
+    border: solid 3px lightgreen;
+}
+
+
+
+input:valid {
+    background-color: #ccffcc; 
+}
+
+input:invalid {
+    background-color: #ffcccc; 
+}
+
+/* Estilos para las filas de datos con precio rojo */
+.precio-rojo {
+  background-color: red;
+  color: white;
+}
+
+/* Estilos para las filas de datos con precio azul */
+.precio-azul {
+  background-color: blue;
+  color: yellow;
+}
